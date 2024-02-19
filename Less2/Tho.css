@@ -1,0 +1,35 @@
+
+body {
+    background-image: url("song.webp");
+    width: 500px;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    width: calc(33% - 20px);
+    /* Sử dụng 50% của chiều rộng của phần tử chứa cột, trừ đi khoảng cách giữa các cột */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-name {
+    font-weight: bolder;
+}
+
+.text-menu {
+    padding-top: 20px;
+}
+
+/* .text-space {
+    margin-left: 30px;
+} */
