@@ -1,12 +1,8 @@
-
 body {
-    background-image: url("song.webp");
-    width: 500px;
-    height: 500px;
-    width: 100%;
+    background-image: url(./nguoi-lai-do.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    background-color: #ccc;
 }
 
 .container {
@@ -16,10 +12,11 @@ body {
 }
 
 .column {
-    width: calc(33% - 20px);
+    width: calc(33% - 40px);
     /* Sử dụng 50% của chiều rộng của phần tử chứa cột, trừ đi khoảng cách giữa các cột */
     padding: 10px;
     box-sizing: border-box;
+    color: rgb(255, 255, 255);
 }
 
 .text-name {
@@ -27,9 +24,6 @@ body {
 }
 
 .text-menu {
-    padding-top: 20px;
+    padding-top: 50px;
+    font-size: 40px;
 }
-
-/* .text-space {
-    margin-left: 30px;
-} */
