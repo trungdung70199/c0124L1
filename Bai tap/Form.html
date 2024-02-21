@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            margin-left: 20px;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        button {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Order Form</h2>
+        <p>What would you want to buy?</p>
+        <select name="#" id="#">
+            <option value="A">A </option>
+            <option value="B">B (+ 0.5$)</option>
+            <option value="C">C (+ 0.5$)</option>
+        </select><br>
+
+        <p>How many would you like to order?</p>
+        <input type="radio" name="rd"> 1 - 10$ <br>
+        <input type="radio" name="rd"> 2 - 20$ <br>
+        <input type="radio" name="rd"> 3 - 25$ <br>
+
+        <p>Name <span style="color: red">*</span> </p>
+        <input type="text" name="first name" placeholder="First name" size="20">
+        <input type="text" name="last name" placeholder="Last name" size="20">
+        <p>Email:</p>
+        <input type="email" size="30">
+        <p>Phone Number:</p>
+        <input type="text" name="phone1" size="3"> -
+        <input type="text" name="phone2" size="3"> -
+        <input type="text" name="phone3" size="3">
+        <br><br>
+        <button type="button" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>
