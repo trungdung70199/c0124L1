@@ -14,6 +14,19 @@
         textarea {
             width: 100%;
         }
+
+        table,
+        th,
+        td {
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .table2-agree {
+            border-collapse: collapse;
+        }
     </style>
 </head>
 
@@ -102,7 +115,44 @@
 
     <p>Please rate your level of agreement with the following statements.</p>
     <!-- Table2 -->
+    <div>
+        <table class="table2-agree">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
 
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>Our products are high quality.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+        </table>
+    </div>
+
+    <button type="button" class="btn btn-primary">Submit</button>
+</body>
 </body>
 
 </html>
