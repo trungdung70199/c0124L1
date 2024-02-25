@@ -9,23 +9,99 @@
     <style>
         body {
             padding-left: 10px;
+            color: #333;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         textarea {
             width: 100%;
         }
 
-        table,
-        th,
-        td {
-            font-size: 20px;
-            text-align: center;
-            border: 1px solid black;
-            border-collapse: collapse;
+        button {
+            margin-bottom: 10px;
+        }
+
+        .age {
+            /* font-size: 100% !important;
+            cursor: pointer; */
+            display: grid;
+            padding: 10px;
+        }
+
+        .age:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        /* salary */
+        .salary {
+            display: grid;
+            padding: 10px;
+        }
+
+        .salary:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .gender:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .gender-other p {
+            font-size: 10px;
+            display: none;
+        }
+
+        .gender-other:active p {
+            display: block;
+        }
+
+        .prod .gender .time .newProd .features {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prod:active {
+            background-color: rgb(238, 230, 144);
+
+        }
+
+        .time:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .newProd:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .features:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .table2-agree:active {
+            background-color: rgb(238, 230, 144);
         }
 
         .table2-agree {
-            border-collapse: collapse;
+            padding: 10px;
+            cursor: pointer;
+
+            table,
+            th,
+            td {
+                font-size: 20px;
+                text-align: center;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: rgb(172, 169, 169);
+            }
+
+        }
+
+        .end {
+            font-size: 10px;
         }
     </style>
 </head>
@@ -64,8 +140,12 @@
         <input type="radio" name="Gender" id="Male"> <span>Male</span><br>
         <input type="radio" name="Gender" id="Female"> <span>Female</span><br>
         <input type="radio" name="Gender" id="Nonbinary"> <span>Nonbinary</span><br>
-        <input type="radio" name="Gender" id="Other"> <span>Other</span><br>
-        <input type="text" name="Other" id="Other">
+        <div class="gender-other">
+            <input type="radio" name="Gender" id="Other"> <span>Other</span><br>
+            <input type="text" name="Other" id="Other">
+            <br><br>
+            <p>Maximum of 250 characters. Currently Used: 0 characters</p>
+        </div>
         <!-- </form> -->
     </div>
     <br>
@@ -150,8 +230,17 @@
             </tr>
         </table>
     </div>
-
+    <br>
     <button type="button" class="btn btn-primary">Submit</button>
+    <br><br>
+
+    <div class="end">
+        <p>
+            This site is protected by reCAPTCHA Enterprise and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply
+        </p>
+    </div>
 </body>
 </body>
 
