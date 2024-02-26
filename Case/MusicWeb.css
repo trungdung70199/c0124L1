@@ -356,3 +356,21 @@ html, body {
 .container main .playlist .music-list .items .item .actions i {
     color: #919191;
 }
+
+.container .right-section {
+    padding: 20px 36px 20px 0;
+}
+
+.container .right-section .profile {
+    display: flex;
+    align-items:  center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+.container .right-section .profile .user .left img {
+    width: 30px;
+}
