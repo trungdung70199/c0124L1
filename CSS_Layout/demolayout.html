@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        #head {
+            height: 100px;
+            background-color: aqua;
+            /* max-width: thay doi theo responsive */
+            max-width: 500px;
+            margin: auto;
+        }
+
+        #head_link {
+            height: 30px;
+            background-color: black;
+        }
+
+        #head_link ul {
+            margin: auto;
+            width: 200px;
+        }
+
+        #head_link ul li {
+            display: inline-block;
+            color: white;
+        }
+
+        #left {
+            width: 20%;
+            height: 300px;
+            background-color: brown;
+            float: left;
+        }
+
+        #content {
+            width: 50%;
+            height: 300px;
+            background-color: chartreuse;
+            float: left;
+        }
+
+        #right {
+            width: 30%;
+            height: 300px;
+            background-color: coral;
+            float: right;
+        }
+
+        #footer {
+            height: 30px;
+            background-color: crimson;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="head_link">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="left"></div>
+    <div id="content"></div>
+    <div id="right"></div>
+    <div id="footer"></div>
+</body>
+
+</html>
