@@ -126,7 +126,7 @@ html, body {
 .container .sidebar .playing .bottom p {
     color: #919191;
 }
-/* 
+
 .container main {
     padding: 20px 36px;
 }
@@ -223,4 +223,37 @@ html, body {
     width: 300px;
     height: 200px;
 
-} */
+}
+
+/* Profile */
+.container .right-section .profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.container .right-section .profile .user {
+    display: flex;
+}
+
+.container .right-section .profile .user .left {
+    display: flex;
+    align-items: center;
+    background: #32323d;
+    padding: 6px;
+    border-radius: 6px 0 0 6px;
+}
+
+.container .right-section .profile .user .left img {
+    width: 30px;
+    height: 30px;
+}
+
+.container .right-section .profile .user .right {
+    background-color: #25252d;
+    border-radius: 0 6px 0 6px;
+    padding: 13px;
+    color: #fff;
+}
