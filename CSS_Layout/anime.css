@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
@@ -67,7 +69,7 @@ html, body {
 .container .sidebar .menu ul li:hover a,
 .container .sidebar .menu ul li:hover i,
 .container main header .nav-links a:hover {
-    color: aquamarine;
+    color:aquamarine;
 }
 
 .container .sidebar .menu h5 {
@@ -87,7 +89,6 @@ html, body {
     gap: 20px;
     cursor: pointer;
 }
-
 
 .container .sidebar .menu ul li a {
     font-size: 14px;
@@ -143,10 +144,21 @@ html, body {
     gap: 20px;    
 }
 
-.container main header .nav-links a {
-    text-transform: uppercase;
-    color: #919191;
-    transition: all 0.3s ease;
+
+.container main {
+    padding: 20px 36px;
+}
+
+.container main header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container main header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;    
 }
 
 .container main header .search {
