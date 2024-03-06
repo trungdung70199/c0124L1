@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effect demo</title>
     <style>
-        .first+h1 {
+        .first:hover {
             background-color: antiquewhite;
+        }
+
+        .first::first-letter {
+            font-size: xx-large;
+        }
+
+        .first::after {
+            content: " with html";
         }
     </style>
 </head>
 
 <body>
     <div class="demo">
-        <h1 class="first">Hello world 1</h1>
-        <h1 class="second">Hello world 2</h1>
-        <h1 class="third">Hello world 3</h1>
-        <h1 class="four">Hello world 4</h1>
-        <h1 class="five">Hello world 5</h1>
+        <h1 class="first">Hello world</h1>
+        <h1 class="second">Hello world</h1>
+        <h1 class="third">Hello world</h1>
+        <h1 class="four">Hello world</h1>
+        <h1 class="five">Hello world</h1>
         <p>
             <span></span>
         </p>
