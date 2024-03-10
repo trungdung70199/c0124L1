@@ -531,7 +531,7 @@ body{
     border-radius: 8px;
     cursor: pointer;
 }
-
+/* screen 1400px */
 @media screen and (max-width: 1400px) {
     
     .container .sidebar .playing .bottom p{
@@ -573,7 +573,7 @@ body{
     }
 
 }
-
+/* screen 1200px */
 @media screen and (max-width: 1200px) {
     
     .container main header .search{
@@ -646,7 +646,7 @@ body{
     }
 
 }
-
+/* screen 992px */
 @media screen and (max-width: 992px) {
     
     .container{
@@ -707,7 +707,7 @@ body{
     }
 
 }
-
+/* tablet */
 @media screen and (max-width: 768px) {
     
     .container{
