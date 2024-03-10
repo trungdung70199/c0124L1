@@ -1,47 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player Web</title>
-    <link rel="stylesheet" href="MusicWeb.css">
-    <!-- icon link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="MusicWeb.js"></script>
+    <link rel="stylesheet" href="MusicWeb.css">
+    <title>Music Player Web Page</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
+
     <div class="container">
         <aside class="sidebar">
             <div class="logo">
+                <button class="menu-btn" id="menu-close">
+                    <i class='bx bx-log-out-circle'></i>
+                </button>
                 <i class='bx bx-pulse'></i>
                 <a href="#">Zing</a>
             </div>
 
             <div class="menu">
                 <h5>Menu</h5>
-                <!-- Set icon -->
                 <ul>
                     <li>
                         <i class='bx bxs-bolt-circle'></i>
                         <a href="#">Explore</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-volume-full'></i>
                         <a href="#">Genres</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-album'></i>
                         <a href="#">Albums</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-microphone'></i>
-                        <a href="#">Artist</a>
+                        <a href="#">Artists</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-radio'></i>
                         <a href="#">Podcasts</a>
@@ -51,82 +50,70 @@
 
             <div class="menu">
                 <h5>Library</h5>
-                <!-- Set icon -->
                 <ul>
                     <li>
                         <i class='bx bx-undo'></i>
                         <a href="#">Recent</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-photo-album'></i>
                         <a href="#">Albums</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-heart'></i>
-                        <a href="#">Favorite</a>
+                        <a href="#">Favorites</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-folder'></i>
                         <a href="#">Local</a>
                     </li>
 
-                    <!-- <li>
-                        <i class='bx bxs-radio'></i>
-                        <a href="#"></a>
-                    </li> -->
                 </ul>
             </div>
 
             <div class="menu">
                 <h5>Playlist</h5>
-                <!-- Set icon -->
                 <ul>
                     <li>
-                        <i class='bx bxs-plus-circle'></i>
+                        <i class='bx bxs-plus-square'></i>
                         <a href="#">Create New</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
                         <a href="#">Best of 2024</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
                         <a href="#">Best of 2023</a>
                     </li>
-
                     <li>
                         <i class='bx bxs-caret-right-circle'></i>
                         <a href="#">Charlie</a>
                     </li>
 
-                    <!-- <li>
-                        <i class='bx bxs-radio'></i>
-                        <a href="#"></a>
-                    </li> -->
                 </ul>
             </div>
 
             <div class="playing">
                 <div class="top">
-                    <img src="img/content.jpg" alt="">
-                    <h4>Apple<br>Hoped</h4>
+                    <img src="img/content.jpg">
+                    <h4>Apple<br>Homed</h4>
                 </div>
-
                 <div class="bottom">
                     <i class='bx bx-podcast'></i>
-                    <p>Playing on device</p>
+                    <p>Playing On Device</p>
                 </div>
             </div>
+
+
         </aside>
 
         <main>
             <header>
                 <div class="nav-links">
+                    <button class="menu-btn" id="menu-open">
+                        <i class='bx bx-menu'></i>
+                    </button>
                     <a href="#">Music</a>
                     <a href="#">Live</a>
                     <a href="#">Podcast</a>
@@ -136,22 +123,23 @@
                     <i class='bx bx-search'></i>
                     <input type="text" placeholder="Type here to search">
                 </div>
+
             </header>
 
             <div class="trending">
                 <div class="left">
-                    <h5>Trending new song</h5>
+                    <h5>Trending New Song</h5>
                     <div class="info">
                         <h2>Janice Davy</h2>
-                        <h4> Reality</h4>
-                        <h5>100+ Million plays</h5>
+                        <h4>Reality</h4>
+                        <h5>100+ Million Plays</h5>
                         <div class="buttons">
-                            <button>Listen now</button>
+                            <button>Listen Now</button>
                             <i class='bx bxs-heart'></i>
                         </div>
                     </div>
                 </div>
-                <img src="img/Reality.jpg" alt="trend">
+                <img src="img/Reality.jpg">
             </div>
 
             <div class="playlist">
@@ -163,34 +151,30 @@
 
                     <div class="items">
                         <div class="item">
-                            <p>Electro <br>Pop</p>
+                            <p>Electro<br>Pop</p>
                         </div>
-
                         <div class="item">
-                            <p>Dance <br>Beat</p>
+                            <p>Dance<br>Beat</p>
                         </div>
-
                         <div class="item">
-                            <p>Club <br>Remix</p>
+                            <p>Vina house<br>Remix</p>
                         </div>
-
                         <div class="item">
-                            <p>Hip Hop <br>Rap</p>
+                            <p>Hip Hop<br>Rap</p>
                         </div>
-
                         <div class="item">
-                            <p>Alternative<br>Indie</p>
+                            <p>Alternative<br>EDM</p>
                         </div>
-
                         <div class="item">
-                            <p>Classical <br>Period</p>
+                            <p>Classical<br>Period</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="music-list">
                     <div class="header">
-                        <h5>Top songs</h5>
+                        <h5>Top Songs</h5>
                         <a href="#">See all</a>
                     </div>
 
@@ -198,99 +182,91 @@
                         <div class="item">
                             <div class="info">
                                 <p>01</p>
-                                <img src="img/song-1.png">
+                                <img src="img/dragon.jpg">
                                 <div class="details">
-                                    <h5>Sunrise</h5>
-                                    <p>Rivera</p>
+                                    <h5>Warriors</h5>
+                                    <p>Imagine Dragon</p>
                                 </div>
                             </div>
-
                             <div class="actions">
-                                <p>03:45</p>
+                                <p>02:51</p>
                                 <div class="icon">
                                     <i class='bx bxs-right-arrow'></i>
                                 </div>
-
                                 <i class='bx bxs-plus-square'></i>
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="info">
                                 <p>02</p>
-                                <img src="img/song-2.png">
+                                <img src="img/Ed.jpg">
                                 <div class="details">
-                                    <h5>Voyage</h5>
-                                    <p>Type Brennan</p>
+                                    <h5>Perfect</h5>
+                                    <p>Ed Sheer</p>
                                 </div>
                             </div>
-
                             <div class="actions">
-                                <p>04:35</p>
+                                <p>04:40</p>
                                 <div class="icon">
                                     <i class='bx bxs-right-arrow'></i>
                                 </div>
-
                                 <i class='bx bxs-plus-square'></i>
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="info">
                                 <p>03</p>
-                                <img src="img/song-3.png">
+                                <img src="img/Alan.jpg">
                                 <div class="details">
-                                    <h5>Voyage</h5>
-                                    <p>Type Brennan</p>
+                                    <h5>Faded</h5>
+                                    <p>Alan Walker</p>
                                 </div>
                             </div>
-
                             <div class="actions">
-                                <p>04:20</p>
+                                <p>03:33</p>
                                 <div class="icon">
                                     <i class='bx bxs-right-arrow'></i>
                                 </div>
-
                                 <i class='bx bxs-plus-square'></i>
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="info">
                                 <p>04</p>
-                                <img src="img/song-4.png">
+                                <img src="img/Sia.jpg">
                                 <div class="details">
-                                    <h5>Voyage</h5>
-                                    <p>Type Brennan</p>
+                                    <h5>Unstoppable</h5>
+                                    <p>Sia</p>
                                 </div>
                             </div>
-
                             <div class="actions">
-                                <p>03:55</p>
+                                <p>03:47</p>
                                 <div class="icon">
                                     <i class='bx bxs-right-arrow'></i>
                                 </div>
-
                                 <i class='bx bxs-plus-square'></i>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
 
         </main>
 
-        <!-- Player profile -->
         <div class="right-section">
+
             <div class="profile">
                 <i class='bx bxs-bell'></i>
                 <i class='bx bxs-cog'></i>
                 <div class="user">
                     <div class="left">
-                        <img src="img/maroon.jpg" alt="mr5">
+                        <img src="img/maroon.jpg">
                     </div>
                     <div class="right">
-                        <h5>Maroon 5</h5>
+                        <h5>Mr 5</h5>
                     </div>
                 </div>
             </div>
@@ -301,25 +277,22 @@
                         <h5>Player</h5>
                         <i class='bx bxs-playlist'></i>
                     </div>
-
                     <div class="song-info">
-                        <img src="img/player.png" alt="Player">
+                        <img src="img/Gods.jpg">
                         <div class="description">
-                            <h3>Ripple Echoes</h3>
-                            <h5>Kail Fischer</h5>
-                            <p>Best of 2024</p>
+                            <h3>Gods</h3>
+                            <h5>New Jean</h5>
+                            <p>Best of 2023</p>
                         </div>
-
                         <div class="progress">
-                            <p>02:30</p>
+                            <p>02:45</p>
                             <div class="active-line"></div>
                             <div class="deactive-line"></div>
-                            <p>1:00</p>
+                            <p>01:30</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- set icon player -->
                 <div class="player-actions">
                     <div class="buttons">
                         <i class='bx bx-repeat'></i>
@@ -328,14 +301,16 @@
                         <i class='bx bx-last-page'></i>
                         <i class='bx bx-transfer-alt'></i>
                     </div>
-
                     <div class="lyrics">
-                        <i class='bx bxs-chevron-up'></i>
+                        <i class='bx bx-chevron-up'></i>
                         <h5>LYRICS</h5>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
     </div>
 </body>
 
