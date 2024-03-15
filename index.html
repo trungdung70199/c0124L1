@@ -1,10 +1,120 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: aliceblue;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "header header header header"
+                "left main main right"
+                "footer footer footer footer"
+            ;
+            /* grid-template-columns: auto auto auto; */
+            gap: 10px;
+        }
+
+
+
+        .item {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .i1 {
+            grid-column: 1/5;
+            grid-area: header;
+        }
+
+        .i2 {
+            grid-area: right;
+        }
+
+        .i3 {
+            grid-area: main;
+        }
+
+        .i4 {
+            grid-area: left;
+        }
+
+        .i5 {
+            grid-area: footer;
+            background-color: #3770f6;
+        }
+
+        .nav {
+            grid-area: navbar;
+            background-color: aqua;
+            display: block;
+        }
+
+        li {
+            display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="item nav">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item i1">
+            <h2>A Demo Site CSS Grid</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque pariatur possimus alias quod ratione
+                incidunt dicta assumenda repudiandae optio eveniet, quisquam fuga! Nam eaque fuga similique quia, esse
+                non libero?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero doloremque, eum quis laudantium
+                hic iste ab sed ipsum veniam, quam dolor rem cupiditate corrupti aliquam repudiandae officia soluta
+                impedit!
+            </p>
+        </div>
+
+        <div class="item i2">
+            <h2>Find Me on Social Media</h2>
+            <a href="#">Facebook</a>
+        </div>
+        <div>
+            <div class="item i3">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem reprehenderit non.
+                    Magni sit alias quia, vel quidem autem quos optio quam at porro aliquid necessitatibus aut et eos
+                    nulla.
+                </p>
+            </div>
+            <div class="item i4">
+                <h2>Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur magnam ipsum, commodi
+                    quam, non dolorem numquam veritatis, qui nam voluptas asperiores neque magni. Placeat, natus
+                    reprehenderit. Fugit, voluptatum commodi.
+                </p>
+            </div>
+        </div>
+        <div class="item i5">
+            Copyright 2021
+            <a href="#">BW2109R1</a>
+        </div>
+    </div>
 </body>
+
 </html>
