@@ -1,13 +1,143 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <!-- link icon -->
-    <link rel="stylesheet" href="assets/vendors/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 
+    <style>
+        .nav-container .nav-list ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav-container .nav-list li {
+            float: left;
+        }
+
+        .nav-container .nav-list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav-container .nav-list li:hover {
+            background-color: #111;
+        }
+
+        .nav-container .nav-login a {
+            float: right;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .main-container .left ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .main-container .left li a {
+            display: block;
+            color: #06f;
+            text-decoration: none;
+            height: 200px;
+        }
+
+        .main-container .left {
+            background-color: #dcdcdc;
+            float: left;
+            width: 16.66%;
+            padding: 15px;
+        }
+
+        .main-container .main {
+            float: left;
+            background-color: white;
+            width: 66.33%;
+            padding: 15px;
+        }
+
+        .main-container .right {
+            float: right;
+            width: 16.66%;
+            padding: 15px;
+            background-color: #dcdcdc;
+            height: 200px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- nav -->
+    <nav class="nav-container">
+        <div class="nav-list">
+            <ul>
+                <li><a href="#">Logo</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-login">
+            <!-- icon -->
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <div class="left">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1>Welcome</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea
+                    commodo consequat. Excepteur sint occaecat cupidata non prodient, sunt in culpa qui officia deserunt
+                    mollit anim is est laborum consectetur adipisicing elit, sed do elusmod tempor ut labore et dolore.
+                </p>
+                <h1>Test</h1>
+                <p>
+                    Lorem ipsum...
+                </p>
+            </div>
+            <div class="right">
+                <p>ADS</p>
+                <p>ADS</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Footer Text
+    </footer>
 </body>
+
 </html>
