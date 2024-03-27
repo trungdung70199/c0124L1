@@ -1,9 +1,44 @@
+:root {
+    background: linear-gradient();
+}
 
+header a {
+    color: white;
+}
 
-.features-number {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    box-shadow: brown inset;
-    border: 1px solid black;
+.navbar-brand {
+    padding-left: 8rem;
+}
+
+.navbar-item {
+    padding-left: 8rem;
+}
+
+.navbar-item:last-child {
+    padding-right: 10rem;
+}
+
+.nav-item {
+    padding: 0.9rem;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+}
+
+header .container .col-md-7 h1{
+    padding: 0..1rem 0em;
+}
+
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
 }
