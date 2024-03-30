@@ -2,7 +2,7 @@ import { useEffect, useState, memo, useCallback } from 'react';
 import './Dialog_UI.scss';
 import * as Dialog from '@radix-ui/react-dialog';
 import { imgIcon, closeIcon, chevronRightIcon, chevronLeftIcon } from '../../svg/icon';
-import Dialog_file from './dialog_file//Dialog_file';
+import Dialog_file from './Dialog_file/Dialog_file';
 import { useDispatch, useSelector } from 'react-redux';
 import {
     updateData,
