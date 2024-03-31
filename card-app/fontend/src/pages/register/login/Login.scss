@@ -1,0 +1,141 @@
+@import '../../../base/color';
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $white;
+    .login-left{
+        // border-right: 0.1px solid rgba($color: $black, $alpha: 0.3);
+        .login-left-img{
+            width: 700px;
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+    .login-right {
+        
+        // height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .login-title {
+            text-align: center;
+            padding-bottom: 10px;
+            h1{
+                padding-bottom:10px ;
+            }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .err_from_sever {
+                color: red;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .login-input {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+                input {
+                    background-color: $text_hover_color;
+                    width: 500px;
+                    padding: 15px;
+                    border: 2px solid transparent;
+                    border-radius: 5px;
+                    &:hover {
+                        border: 2px solid $text_color_soft_2;
+                    }
+                    &:focus {
+                        border: 2px solid black;
+                    }
+                    &:invalid[focused='true'] ~ p {
+                        display: block;
+                    }
+                    &:invalid[focused='true'] {
+                        border: 1px solid red;
+                    }
+                }
+                .valid-err {
+                    color: red;
+                    display: none;
+                }
+                .showPass {
+                    // height: 100%;
+                    position: absolute;
+                    right: 3%;
+                    bottom: 15%;
+                    cursor: pointer;
+                }
+            }
+            .login-btn {
+                // position: relative;
+                width: 100%;
+                padding: 15px;
+                font-size: 20px;
+                font-weight: 900;
+                background-color: $btn_login_color;
+                color: $black;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: rgba($color: $background_color, $alpha: 0.9);
+                    transform: scale(1.01);
+                }
+            }
+        }
+        .login-direct {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .login-btn-google {
+            width: 100%;
+            //    width: 300px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 25px;
+            background-color: $white;
+            border: 1px solid rgba($color: $black, $alpha: 0.3);
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: $text_hover_color;
+                border: 1px solid rgba($color: $black, $alpha: 0.7);
+            }
+        }
+        .login-protected {
+            font-size: 13px;
+            opacity: 0.7;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .login{
+        .login-left{
+            display: none;
+        }
+        .login-right{
+            .form-group{
+                .login-input{
+                    width: 100%;
+                    input{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
