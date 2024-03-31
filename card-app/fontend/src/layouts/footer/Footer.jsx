@@ -41,15 +41,13 @@ function Footer() {
                         </div> */}
                         {/* Link social */}
                         <ul className="footer-icon">
-                            <a href="#" target="blank">
+                            <a href="#" target='blank'>
                                 <img className="footer-icon_items" src={facebook} alt="" />
                             </a>
                             <a href="https://github.com/trungdung70199" target="blank">
                                 <img className="footer-icon_items" src={github} alt="" />
                             </a>
-                            <a href="#">
-                                <img className="footer-icon_items" src={twitter} alt="" />
-                            </a>
+                            <a href="#"><img className="footer-icon_items" src={twitter} alt="" /></a>
                         </ul>
                     </div>
                 </div>

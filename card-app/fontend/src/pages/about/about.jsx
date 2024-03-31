@@ -1,6 +1,6 @@
 import './About.scss';
-import nfcCard from '../../assets/img/nfc-card.jpg';
-import Member from './Memeber';
+import nfcCard from '../../assets/img/card.jpg';
+// import Member from './Memeber';
 function About() {
     return (
         <div className="About">
@@ -36,7 +36,7 @@ function About() {
                     <img className="About-right-img" src={nfcCard} alt="" loading="lazy" />
                 </div>
             </div>
-            <div className="About-member">
+            {/* <div className="About-member">
                 <h2 className="About-title">Team Member</h2>
                 <div className="About-group">
                     <Member
@@ -73,7 +73,7 @@ function About() {
                         job={'Tester'}
                     />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
