@@ -1,3 +1,5 @@
+import ProTypes from "prop-types";
+
 /* eslint-disable react/prop-types */
 function Student(props) {
   return (
@@ -9,4 +11,15 @@ function Student(props) {
   );
 }
 
+Student.prototype = {
+  name: ProTypes.string,
+  age: ProTypes.number,
+  isStudent: ProTypes.bool,
+};
+
+Student.defaultProps = {
+  name: "Guest",
+  age: 0,
+  isStudent: false,
+};
 export default Student;
