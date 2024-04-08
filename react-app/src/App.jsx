@@ -18,7 +18,7 @@ function App() {
       <Student name="Kit" age={22} isStudent={true} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student />
-      <UserGreeting isLoggedIn={false} username="ID" />
+      <UserGreeting isLoggedIn={true} username="TD" />
       <Footer />
     </>
   );
