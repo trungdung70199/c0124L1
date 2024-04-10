@@ -14,22 +14,28 @@ const music = new Audio();
 
 const songs = [
     {
-        path: 'assets/1.mp3',
-        displayName: 'The Charmer\'s Call',
-        cover: 'assets/1.jpg',
-        artist: 'Hanu Dixit',
+        path: 'assets/',
+        displayName: 'Faded',
+        cover: 'assets/Alan.jpg',
+        artist: 'Alan Walker',
     },
     {
-        path: 'assets/2.mp3',
-        displayName: 'You Will Never See Me Coming',
-        cover: 'assets/2.jpg',
-        artist: 'NEFFEX',
+        path: 'assets/',
+        displayName: 'Warriors',
+        cover: 'assets/dragon.jpg',
+        artist: 'Imagine Dragon',
     },
     {
-        path: 'assets/3.mp3',
-        displayName: 'Intellect',
-        cover: 'assets/3.jpg',
-        artist: 'Yung Logos',
+        path: 'assets/',
+        displayName: 'Unstoppable',
+        cover: 'assets/Sia.jpg',
+        artist: 'Sia',
+    },
+    {
+        path: 'assets/',
+        displayName: '',
+        cover: 'assets/Ed.jpg',
+        artist: 'EdSherman',
     }
 ];
 
