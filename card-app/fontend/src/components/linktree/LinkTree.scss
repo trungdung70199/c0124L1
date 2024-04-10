@@ -1,0 +1,74 @@
+@import '../../base/color';
+
+.linktree-link {
+    text-decoration: none;
+    // padding-bottom:10px ;
+    .linktree-decs{
+        font-size: 15px;
+        font-weight: 500;
+        // background-color: transparent;
+    }
+    .linktree {
+        padding: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        .linktree-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            gap: 15px;
+            width: 100%;
+            .linktree-title {
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                font-size: 17px;
+                font-weight: 500;
+                text-overflow:ellipsis;
+                text-wrap: nowrap;
+                overflow: hidden;
+                width: 100%;
+            }
+            .linktree-thumb{
+               
+                width: 45px;
+                height: 45px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        .linktree-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-20%);
+        }
+        .linktree-icon_menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &:hover {
+            transform: scale(0.98);
+            border: 1px solid rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+}
+//mobile browser
+@media only screen and (max-width: 768px) {
+    .linktree {
+        max-width: 280px;
+        padding: 12px;
+        .linktree-link {
+            .linktree-item {
+                .linktree-title {
+                }
+            }
+            .linktree-icon {
+            }
+            .linktree-icon_menu {
+            }
+        }
+    }
+}

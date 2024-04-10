@@ -1,0 +1,153 @@
+@import '../../../base/color';
+.signup {
+    background-color: $white;
+    height: 100vh;
+    .signup-container {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .signup-title {
+            text-align: center;
+            padding-bottom: 10px;
+            h1{
+                padding-bottom:10px ;
+            }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            // background-color: aqua;
+            .err_from_sever {
+                color: red;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .signup-input {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                position: relative;
+                input {
+                    background-color: $text_hover_color;
+                    width: 600px;
+                    padding: 15px;
+                    border: 2px solid transparent;
+                    border-radius: 5px;
+                    &:hover {
+                        border: 2px solid $text_color_soft_2;
+                    }
+                    &:focus {
+                        border: 2px solid black;
+                    }
+                    &:invalid[focused='true'] ~ p {
+                        display: block;
+                    }
+                    &:invalid[focused='true'] {
+                        border: 1px solid red;
+                    }
+                }
+
+                .valid-err {
+                    color: red;
+                    display: none;
+                }
+                .username {
+                    //    justify-content: space-;
+                    gap: 2px;
+                    display: flex;
+                    .username-input {
+                        width: 100%;
+                         
+                    }
+                    }
+                    label {
+                        // display: block;
+                        // left:10%;
+                        // // top:50%;
+                        // transform:translate(-50%,-50%);
+                        // position: absolute;
+                        background-color: $text_hover_color;
+                        padding: 15px;
+                        border-radius: 5px;
+                        width: 35%;
+                        
+                    }
+                    &:invalid[focused='true'] ~ p {
+                        display: block;
+                }
+            
+            }
+            .signup-btn {
+                width: 100%;
+                padding: 15px;
+                font-size: 20px;
+                font-weight: 900;
+                background-color: $background_color;
+                color: $white;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: rgba($color: $background_color, $alpha: 0.9);
+                    transform: scale(1.01);
+                }
+            }
+        }
+        .signup-direct {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .login-btn-google {
+            width: 100%;
+            //    width: 300px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 25px;
+            background-color: $white;
+            border: 1px solid rgba($color: $black, $alpha: 0.3);
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: $text_hover_color;
+                border: 1px solid rgba($color: $black, $alpha: 0.7);
+            }
+        }
+        .signup-protected {
+            font-size: 13px;
+            opacity: 0.7;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .signup {
+        .signup-container {
+            height: 100vh;
+            .form-group {
+                width: 95%;
+                .signup-input {
+                    width: 100%;
+                    input {
+                        width: 91%;
+                    }
+                    .username label {
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+}

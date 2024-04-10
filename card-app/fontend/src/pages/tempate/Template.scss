@@ -1,0 +1,23 @@
+@import '../../base/color';
+@import '../../base/variable';
+.template {
+    background-color: $bg_template;
+    // height: 100%;
+    padding-bottom: 50px;
+    padding-top: 180px;
+    // width: 100%;
+        .template-item {
+            // width: 80$;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tempProfile_title {
+                padding-top: 10px;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+  
+}
+
