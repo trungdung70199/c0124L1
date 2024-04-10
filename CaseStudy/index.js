@@ -14,25 +14,25 @@ const music = new Audio();
 
 const songs = [
     {
-        path: 'assets/',
+        path: 'assets/Faded.mp3',
         displayName: 'Faded',
         cover: 'assets/Alan.jpg',
         artist: 'Alan Walker',
     },
     {
-        path: 'assets/',
+        path: 'assets/Warriors.mp3',
         displayName: 'Warriors',
         cover: 'assets/dragon.jpg',
         artist: 'Imagine Dragon',
     },
     {
-        path: 'assets/',
+        path: 'assets/Unstoppable.mp3',
         displayName: 'Unstoppable',
         cover: 'assets/Sia.jpg',
         artist: 'Sia',
     },
     {
-        path: 'assets/',
+        path: 'assets/Perfect.mp3',
         displayName: '',
         cover: 'assets/Ed.jpg',
         artist: 'EdSherman',
