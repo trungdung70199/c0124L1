@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './base/_gobal.scss';    
 // react query
+// eslint-disable-next-line no-unused-vars
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 //redux-toolkit
 import { store } from './redux-toolkit/store.js';

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import './App.scss';
 import Navbar from './layouts/nav/Navbar';
 import { Navigate, Outlet, Route, RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -10,9 +12,11 @@ import { useSelector } from 'react-redux';
 // import cookies from "js-cookie";
 //lazy loading
 const Home = lazy(() => import('./pages/home/Home'));
+// eslint-disable-next-line no-unused-vars
 import Template from './pages/tempate/Template';
 import ResetPass from './pages/register/resetPass/ResetPass';
 import Newpass from './pages/register/newPass/NewPass';
+// eslint-disable-next-line no-unused-vars
 import PreView from './components/Preview/PreView';
 import Fade from './components/Fade/Fade';
 import About from './pages/about/about';
