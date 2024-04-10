@@ -33,9 +33,15 @@ const songs = [
     },
     {
         path: 'assets/Perfect.mp3',
-        displayName: '',
+        displayName: 'Perfect',
         cover: 'assets/Ed.jpg',
         artist: 'EdSherman',
+    },
+    {
+        path:'assets/Wiz Khalifa  See You Again.mp3',
+        displayName: 'See you again',
+        cover: 'assets/content.jpg',
+        artist: 'Charlie Push',
     }
 ];
 
