@@ -16,8 +16,8 @@ const songs = [
     {
         path: 'assets/The Nights.mp3',
         displayName: 'The Nights',
-        cover: 'assets/Avci.jpg',
-        artist: 'Avci',
+        cover: 'assets/Avicii.jpg',
+        artist: 'Avicii',
     },
     {
         path: 'assets/Daisy.jpg',
