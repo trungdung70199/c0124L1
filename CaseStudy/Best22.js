@@ -20,7 +20,7 @@ const songs = [
         artist: 'Avicii',
     },
     {
-        path: 'assets/Daisy.jpg',
+        path: 'assets/Daisy.mp3',
         displayName: 'Daisy',
         cover: 'assets/Daisy.jpg',
         artist: 'Stereo Foundation',
